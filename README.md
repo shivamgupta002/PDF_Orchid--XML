@@ -28,7 +28,7 @@ The sidebar exposes supplier ID, TPA-ID, IPUI, source ID, and batch timestamp. T
 - Parsed the generated XML successfully with Python's XML parser.
 
 ## Important production notes
-- This version is tuned to the first-page and reference layout in the supplied *Asian Journal of Chemistry* sample. Different publisher layouts may need additional parsing rules.
+- This version is tuned to the first-page and reference layout in the supplied sample. Different publisher layouts may need additional parsing rules.
 - Image-only/scanned PDFs require OCR before upload.
 - The output follows the structure and namespaces of the provided XML example, but it has **not** been validated against your organization's CAR XSD or production ingestion service. Validate the XML with the official XSD and review it before production use.
 - Some fields present in the example XML (for example internal IPUI, source ID, batch envelope values) are not contained in the PDF/ORCID JSON. Enter the correct values in the sidebar rather than assuming the defaults are valid for another article.
